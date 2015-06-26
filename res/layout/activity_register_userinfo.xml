@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/name"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:padding="5dp"
+        android:hint="用户名"
+        android:background="@drawable/register_phone_bg"/>
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/gray_font"
+        android:textSize="16sp"
+        android:text="建议填写你的真实姓名,让你的朋友更容易人出你,此昵称以后可以随时修改"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"/>
+    
+    <EditText
+        android:id="@+id/password"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:hint="用户密码"
+        android:background="@drawable/register_phone_bg"/>
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/gray_font"
+        android:textSize="16sp"
+        android:text="密码由6-16位数字,字母或符号组成,不能是9位一下纯数字组成"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"/>
+    
+    <Button 
+        android:id="@+id/register_complete"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_btn"
+        android:textSize="18sp"
+        android:textColor="@color/whites"
+        android:text="注册"/>
+
+</LinearLayout>

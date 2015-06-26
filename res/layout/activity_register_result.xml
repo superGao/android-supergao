@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="@color/gray_font"
+        android:text="注册成功，用户名为"
+        android:layout_marginTop="80dp"/>
+    
+    <TextView 
+        android:id="@+id/tv"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:text=""
+        android:layout_marginTop="20dp"/>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <CheckBox 
+            android:id="@+id/ck_agreen"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/checkbox"
+            android:button="@null"
+            android:checked="true"/>
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="免责声明：如果在使用本软件造成了消息泄露，纯属本人故意，有本事来打我啊"
+            android:textColor="@color/gray_font"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/register_success"
+        android:layout_height="60sp"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/login_btn"
+        android:textColor="@color/whites"
+        android:textSize="16sp"
+        android:text="进入superGao"/>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+	
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/s_super" />
+
+    <EditText 
+        android:id="@+id/man"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="男生姓名"
+        android:layout_centerVertical="true"
+        />
+    <EditText 
+        android:id="@+id/woman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="女生姓名"
+        android:layout_below="@id/man"
+        />
+
+	<TextView 
+	    android:id="@+id/tt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="superGao说：凡事❤诚则灵..."
+	    android:textColor="#cc33cc"
+	    android:textSize="20dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    
+	    />
+	<TextView 
+	    android:id="@+id/hh"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="听说，测爱情,,输入全名和全名更配哦。。。"
+	    android:layout_centerHorizontal="true"
+	    android:layout_above="@id/tt"
+	    android:textColor="#ff3333"
+	    />
+
+	<Button
+	    android:id="@+id/bb"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/woman"
+	    android:background="@drawable/love"
+	    android:onClick="click"
+	    android:text="测一下"
+	    android:textColor="#ffff00"
+	    android:textStyle="bold" 
+	    android:layout_centerHorizontal="true"
+	    />
+
+</RelativeLayout>

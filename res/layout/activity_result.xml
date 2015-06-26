@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/s_super" 
+        android:onClick="call"
+        />
+    
+    <TextView 
+	    android:id="@+id/call"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="不爽我？有本事点我啊。。(点图片)"
+	    android:onClick="call"
+	    android:textColor="#0000cc"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@id/image"
+	    />
+    <TextView 
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:textColor="#9900ff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        
+        />
+    
+    <Button
+        android:id="@+id/bb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:background="@drawable/love"
+        android:onClick="click"
+        android:text="不准，再测一下"
+        android:textColor="#ffff00"
+        android:textStyle="bold" 
+        android:layout_centerHorizontal="true"
+        />
+
+	<TextView 
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="免责声明：以上观点仅供娱乐，若造成感情危机，有本事来打我啊。。。"
+        android:textColor="#cc0000"
+	    android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"   
+        />
+	
+</RelativeLayout>
